@@ -1,0 +1,113 @@
+@import '../../common/css/colors.css';
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent !important;
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.popup .background {
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+.popup .popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 80%;
+    border-radius: 20px;
+    width: 50%;
+    background-color: var(--font-primary);
+    z-index: 31;
+    padding: 30px;
+}
+
+.popup .popup-content .top {
+    height: 17%;
+}
+
+.popup .popup-content .bottom {
+    height: 83%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #edeff3;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.popup .popup-content .bottom .no_data {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup .popup-content .bottom .no_data h5 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: var(--sub-font);
+    font-weight: 300;
+}
+
+.popup .popup-content .top .top-header {
+    background-color: var(--font-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popup .popup-content .top .top-header h5 {
+    color: var(--sub-font);
+    font-size: 19px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.popup .popup-content .top hr {
+    margin: 20px 0px;
+    height: 1px;
+    background-color: var(--line-color);
+}
+
+.popup .popup-content .top p {
+    font-size: 15px;
+    color: var(--sub-font);
+    font-weight: 300;
+}
+
+/* Screen width 1024px */
+@media screen and (max-width: 1024px) {
+    .popup .popup-content {
+        width: 60%;
+    }
+}
+
+/* Screen width 768px */
+@media screen and (max-width: 768px) {
+    .popup .popup-content {
+        width: 80%;
+    }
+}
+
+/* Screen width 567px */
+@media screen and (max-width: 567px) {
+    .popup .popup-content {
+        width: 90%;
+    }
+
+    .popup .popup-content {
+        padding: 15px;
+    }
+}

@@ -1,0 +1,82 @@
+@import '../../common/css/colors.css';
+
+.application_card {
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 10px;
+    height: 150px !important;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #303F6080;
+}
+
+.application_card .profile {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.application_card .profile .profile-icon {
+    height: 50px;
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-secondary-color);
+    color: var(--sub-font);
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.application_card .profile-text {
+    margin-left: 10px;
+}
+
+.application_card .profile-text h5 {
+    font-size: 15px;
+    color: var(--sub-font);
+    margin: 0px;
+    font-weight: 400;
+}
+
+.application_card .profile-text p {
+    color: var(--sub-font);
+    font-size: 14px;
+    margin: 8px 0px 0px 0px;
+    font-weight: 300;
+}
+
+.application_card .bottom3 {
+    margin-top: 5px;
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+.application_card .bottom3 .loading {
+    margin-top: 130px;
+}
+
+.application_card .bottom3 h6 {
+    color: var(--sub-font);
+    font-size: 13px;
+    margin: 0px;  
+    font-weight: 400; 
+}
+
+.application_card .bottom3 p {
+    color: var(--sub-font);
+    font-size: 15px;
+    margin: 5px 0px 0px 0px;
+    font-weight: 300;
+}
+
+/* Screen width 768px */
+@media screen and (max-width: 768px) {
+    .application_card h5 {
+        font-size: 18px;
+        margin: 0px 0px 0px 0px;
+    }
+}

@@ -1,0 +1,39 @@
+@import '../../common/css/colors.css';
+
+.login_logout_card {
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #557DA526;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block !important;
+    position: relative;
+}
+
+.login_logout_card h5 {
+    font-size: 24px;
+    color: var(--font-secondary);
+    margin: 0px;
+}
+
+.login_logout_card p {
+    color: var(--sub-font);
+    font-size: 17px;
+    margin: 10px 0px 0px 0px;
+}
+
+.login_logout_card .close{
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+/* Screen width 768px */
+@media screen and (max-width: 768px) {
+    .login_logout_card h5 {
+        font-size: 18px;
+        margin: 0px 0px 0px 0px;
+    }
+}

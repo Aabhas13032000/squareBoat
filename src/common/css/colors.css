@@ -1,0 +1,15 @@
+:root {
+    --primary-color: #303F60;
+    --secondary-color: #1A253C;
+    --background-color: #EDF6FF;
+    --background-secondary-color: #43AFFF33;
+    --line-color: #4D618E;
+    --shadow-color: #557DA526;
+    --font-primary: #ffffff;
+    --font-secondary: #43AFFF;
+    --sub-font: #303F60;
+    --icon: #D9EFFF;
+    --border: #c6c6c6;
+    --border-error: #ff0000;
+    --input: #E8E8E833;
+}
